@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="../Styles/SignUp.css">
+    
 </head>
-
 <body>
+
+
     <div class="signUpMainContainer">
         <div class="signUpMiddleSec">
             <form class="signUpLeftContainer">
@@ -26,15 +28,15 @@
                 </div>
                 <div class="signUpNameBox">
                     <div>
-                        <input class="inputfirstname" placeholder="First Name" />
+                        <input class="inputfirstname" placeholder="First Name" id="firstName" />
                     </div>
                     <div>
-                        <input class="inputlastname" placeholder="Last Name" />
+                        <input class="inputlastname" placeholder="Last Name" id="lastName" />
                     </div>
                 </div>
 
                 <div class="email">
-                    <input class="inputemail" placeholder="Username" />
+                    <input class="inputemail" placeholder="Username" id="UsernameEmail" />
                 </div>
                 <div class="message">
                     You can use letters, numbers & periods
@@ -42,10 +44,10 @@
 
                 <div class="passwordbox">
                     <div>
-                        <input class="password" placeholder="Password" />
+                        <input class="password" placeholder="Password" id="Password"/>
                     </div>
                     <div>
-                        <input class="confirm" placeholder="Confirm" />
+                        <input class="confirm" placeholder="Confirm" id="ConfirmPassword" />
                     </div>
                 </div>
                 <div class="bottommessage">
@@ -87,6 +89,7 @@
 
     </div>
 
+    <script src="../Scripts/SignUp.js" ></script>
 </body>
 
 </html>
