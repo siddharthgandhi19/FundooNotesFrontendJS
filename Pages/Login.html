@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Login</title>
-    <link rel="stylesheet" href="../Styles/Login.css">
+    <link href="../Styles/Login.css" rel="stylesheet" >
 </head>
 <body>
 <div class="body">
-            <form class="signInFormBody">
+            <div class="signInFormBody">
                 <div class="signInLogo">
                     <div class="f">F</div>
                     <div class="u">u</div>
@@ -24,16 +24,20 @@
                 </div>
                 <div class="signInInputBox">
                     <div class="input" >
-                         <input class="InputEmail" placeholder="Email or phone" id="InputEmail"/> 
+                         <input class="InputEmail" placeholder="Email or phone" id="InputEmail1"/> 
                     </div>
                     <div class="input" >
-                         <input class="InputPassword" placeholder="Password" type="password" id="InputPassword"/>
+                         <input class="InputPassword" placeholder="Password" type="password" id="InputPassword1"/>
                        
                     </div>
                 </div>
                 <div class="signInForgotBox">
-                    <div class="signInForgotEmail">Forgot email?</div>
-                    <div class="signInForgotPassword">Forgot password?</div>
+                    <div  class="signInForgotEmail">
+                        <a href="../Pages/ForgotPassword.html"> Forgot email?</a>
+                       </div>
+                    <div class="signInForgotPassword">
+                        <a href="../Pages/ForgotPassword.html"> Forgot password?</a>
+                       </div>
                 </div>
                 <div class="bottomTextLine">
                     <p>Not your computer? Use Guest mode to sign in privately.</p>
@@ -42,10 +46,10 @@
 
                 <div class="CreateAccountLogin">
                     <a class="CreateAccountLink">Create Account</a>
-                    <button class="LoginButton">Next</button>
+                    <button  class="LoginButton" onclick="Login()"  >Next</button>
                  
                 </div>
-            </form>
+            </div>
             <div class="signInFooter">
                 <select class="signInLanguage">
                     <option value="English">English (India)</option>

@@ -1,4 +1,7 @@
-// console.log("hello world")
+console.log("hello Signup")
+
+//  Signup();
+
 
 document.getElementById('firstName').addEventListener("keyup",function(){
 
@@ -36,3 +39,26 @@ document.getElementById('ConfirmPassword').addEventListener("keyup",function(){
     console.log(ConfirmPassword)
 })
 
+function Signup(){
+    let data = {
+        "firstName":document.getElementById("firstName").value,
+        "lastName":document.getElementById("lastName").value,
+        "email":document.getElementById("UsernameEmail").value,
+        "password":document.getElementById("Password").value   
+      }
+    
+    fetch('https://localhost:44386/api/User/UserRegistration', {
+        method: 'POST', // or 'PUT'
+        headers: {
+          'Content-Type': 'application/json',
+        },
+          body: JSON.stringify(data),
+      })
+      .then((response)=>response.json())
+      .then((data) => {
+          console.log('success', data);
+      })
+      .catch((error) =>{
+          console.log('Error:',error);
+      })
+    }
